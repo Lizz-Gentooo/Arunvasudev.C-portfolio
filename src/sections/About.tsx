@@ -1,5 +1,5 @@
 import Reveal from "../components/Reveal";
-import profileImg from "../assets/profile.jpg";
+import aboutImg from "../assets/About_card.jpg";
 import { personal } from "../data/resume";
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
           <Reveal direction="right" className="relative mx-auto w-full max-w-xs lg:mx-0">
             <div className="relative overflow-hidden rounded-2xl border border-space-accent/20">
               <img
-                src={profileImg}
+                src={aboutImg}
                 alt={`${personal.name} portrait`}
                 className="h-full w-full object-cover grayscale-[15%]"
                 loading="lazy"
