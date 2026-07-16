@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 248 250 252;
+    --surface: 255 255 255;
+    --text: 15 23 42;
+    --text-muted: 100 116 139;
+    --accent: 37 99 235;
+    --accent-2: 37 99 235;
+    --border: 226 232 240;
+  }
+
+  .dark {
+    --bg: 11 18 32;
+    --surface: 22 33 62;
+    --text: 248 250 252;
+    --text-muted: 148 178 199;
+    --accent: 77 168 218;
+    --accent-2: 125 211 252;
+    --border: 34 48 74;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    background-color: rgb(var(--bg));
+    color: rgb(var(--text));
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  ::selection {
+    background-color: rgb(var(--accent) / 0.3);
+    color: rgb(var(--text));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.25em] uppercase;
+    color: rgb(var(--accent));
+  }
+
+  .section-heading {
+    @apply font-display text-3xl sm:text-4xl font-semibold tracking-tight;
+    color: rgb(var(--text));
+  }
+
+  .surface-card {
+    background-color: rgb(var(--surface) / 1);
+    border: 1px solid rgb(var(--border));
+  }
+
+  .divider-line {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--accent) / 0.6),
+      transparent
+    );
+  }
+}
+
+/* Blueprint grid background */
+.blueprint-grid {
+  background-image: linear-gradient(rgb(var(--accent) / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--accent) / 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Star field */
+.star {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgb(var(--text));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--accent) / 0.4);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--accent) / 0.7);
+}
