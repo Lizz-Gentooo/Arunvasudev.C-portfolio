@@ -27,7 +27,7 @@ export const personal: PersonalInfo = {
 export const skillGroups: SkillGroup[] = [
   {
     category: "Technical Skills",
-    skills: ["CAD (Computer-Aided Design)", "Engineering Drawing", "Diesel Engine Fundamentals"],
+    skills: ["CAD (Computer-Aided Design)", "Engineering Drawing", "Diesel Engine Fundamentals", "CNC Machine Operation", ],
   },
   {
     category: "Soft Skills",
@@ -49,7 +49,7 @@ export const education: EducationItem[] = [
   },
   {
     degree: "Higher Secondary",
-    institution: "Scored S Grade in Engineering Drawing",
+    institution: "SRMV SSHSS, Coimbatore",
     timeframe: "",
   },
 ];
