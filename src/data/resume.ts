@@ -27,7 +27,7 @@ export const personal: PersonalInfo = {
 export const skillGroups: SkillGroup[] = [
   {
     category: "Technical Skills",
-    skills: ["CAD (Computer-Aided Design)", "Engineering Drawing", "Diesel Engine Fundamentals", "CNC Machine Operation", ],
+    skills: ["CAD (Computer-Aided Design)", "Engineering Drawing", "Diesel Engine Fundamentals", "CNC Machine Operation (basic)", ],
   },
   {
     category: "Soft Skills",
