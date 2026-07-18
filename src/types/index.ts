@@ -20,7 +20,7 @@ export interface ContactLink {
   label: string;
   value: string;
   href: string;
-  icon: "phone" | "linkedin";
+  icon: "phone" | "linkedin" | "instagram" | "youtube";
 }
 
 export interface PersonalInfo {
