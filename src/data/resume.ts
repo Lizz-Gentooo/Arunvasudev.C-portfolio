@@ -71,6 +71,18 @@ export const contactLinks: ContactLink[] = [
     href: "https://linkedin.com/in/arunvasudevc",
     icon: "linkedin",
   },
+  {
+    label: "Instagram",
+    value: "@arun_.the.traveller05",
+    href: "https://www.instagram.com/arun_.the.traveller05?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    icon: "instagram",
+  },
+  {
+    label: "YouTube",
+    value: "@NEXTSTOP-2025",
+    href: "https://www.youtube.com/@NEXTSTOP-2025",
+    icon: "youtube",
+  },
 ];
 
 export const resumeFile = "/Arun_Vasudev_Resume.pdf";

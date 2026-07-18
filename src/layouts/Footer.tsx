@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { FiLinkedin, FiPhone, FiArrowUp } from "react-icons/fi";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { contactLinks } from "../data/resume";
 
 const iconMap = {
   linkedin: FiLinkedin,
   phone: FiPhone,
+  instagram: FaInstagram,
+  youtube: FaYoutube,
 };
 
 export default function Footer() {
@@ -24,7 +27,7 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                target={link.icon === "linkedin" ? "_blank" : undefined}
+                target={link.icon === "phone" ? undefined : "_blank"}
                 rel="noopener noreferrer"
                 aria-label={link.label}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-space-accent/20 text-day-secondary transition-colors hover:border-space-accent hover:text-space-accent dark:text-space-white/60 dark:hover:text-space-highlight"
