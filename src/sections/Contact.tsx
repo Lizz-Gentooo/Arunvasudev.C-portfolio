@@ -155,8 +155,8 @@ export default function Contact() {
               </motion.button>
 
               <p className="text-center font-mono text-[11px] text-day-secondary/70 dark:text-space-white/30">
-                This form is a UI preview — please use the contact links on the
-                left for a direct reply.
+                This form is a UI preview — please use the contact links
+                for a direct reply.
               </p>
             </form>
           </Reveal>
